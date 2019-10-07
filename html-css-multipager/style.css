@@ -1,0 +1,914 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*************************************/
+/*************************************/
+/*************************************/
+/*************************************/
+/*************************************/
+/* INDEX PAGE START */
+#body3 {
+  background-image: url(images/background.jpg);
+  background-size: 120% 120%;
+  background-repeat: no-repeat;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header-right"
+    "sidebar1 logo ."
+    "sidebar1 options ."
+    "sidebar1 video commercial"
+    "sidebar2 video commercial"
+    ". region ."
+    "arrow install .";
+}
+
+/* header starts here */
+.header-left3 {
+  grid-column: 1/3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-left3 .blizzard-logo3 {
+  width: 70px;
+  height: 70px;
+  margin-left: 30px;
+}
+
+.games3, .social3, .shop3, .news3, .more3 {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.more3 {
+  font-size: 30px;
+}
+
+.games3:hover, .social3:hover, .shop3:hover, .news3:hover {
+  text-shadow: 2px 2px 2px #fff;
+}
+
+.header-left3 .overwatch-header3 {
+  width: 75px;
+  height: 40px;
+}
+
+/* header right starts here */
+.header-right3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bell3 {
+  width: 40px;
+  height: 40px;
+  padding-left: 5px;
+}
+
+.camera3 {
+  width: 40px;
+  height: 40px;
+  padding-left: 5px;
+}
+
+.friends3 {
+  width: 40px;
+  height: 40px;
+}
+
+.friends-online3 {
+  color: grey;
+}
+
+.header-right-table3 {
+  border-collapse: collapse;
+}
+
+.header-right-table3 td {
+  border: 1px solid grey;
+}
+
+.profile3 {
+  background-color: #111932;
+  border: 0px;
+  color: #fff;
+}
+
+/* sidebar starts here */
+.blizzard-games3, .blizzard-list3 {
+  grid-area: sidebar1;
+  margin-bottom: 15px;
+}
+
+.partner-games3, .partner-list3 {
+  grid-area: sidebar2;
+}
+
+.blizzard-games3, .partner-games3 {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 30px;
+  padding-left: 10px;
+}
+
+.blizzard-list3, .partner-list3 {
+  color: #746d56;
+  margin-top: 30px;
+  line-height: 2;
+}
+
+li {
+  list-style: none;
+}
+
+/* logo starts here */
+.wow3 {
+  background-image: url(images/wow-logo.png);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+.wow3:hover, .diablo3:hover, .starcraft3:hover, .heartstone3:hover, .hots3:hover, .overwatch3:hover, .starcraftone3:hover, .warcraft3:hover, .cod3:hover, .destiny3:hover, .codmw3:hover {
+  color: #fff;
+  background-color: #38191d;
+}
+
+.diablo3 {
+  background-image: url(images/diablo3.png);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+.starcraft3 {
+  background-image: url(images/starcraft2.png);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+.heartstone3 {
+  background-image: url(images/hearstone-logo.png);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+.hots3 {
+  background-image: url(images/hots-logo.png);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+.overwatch3 {
+  background-image: url(images/overwatch-logo-list.png);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+.starcraftone3 {
+  background-image: url(images/starcraft-logo.png);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+.warcraft3 {
+  background-image: url(images/warcraft3-logo.png);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+.cod3 {
+  background-image: url(images/codbo4-logo.png);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+.destiny3 {
+  background-image: url(images/destiny2-logo.png);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+.codmw3 {
+  background-image: url(images/modern-warfare-logo.png);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+/* logo and options start here */
+.wowbfa3 {
+  grid-area: logo;
+  width: 313px;
+  height: 152px;
+}
+
+.redeem3, .options-icon3, .options3, .redeem-code3 {
+  margin-top: 10px;
+}
+
+.options-icon3 {
+  grid-area: options;
+  width: 20px;
+  height: 18px;
+  padding-left: 20px;
+}
+
+.options3 {
+  grid-area: options;
+  color: #fff;
+  font-size: 16px;
+  padding-left: 45px;
+  text-decoration: none;
+}
+
+.redeem-code3 {
+  display: flex;
+  grid-area: options;
+  width: 20px;
+  height: 18px;
+  padding-left: 125px;
+}
+
+.redeem3 {
+  grid-area: options;
+  color: #fff;
+  font-size: 16px;
+  padding-left: 150px;
+  text-decoration: none;
+}
+
+/* content starts here */
+.safe-heaven3 {
+  grid-area: video;
+  width: 500px;
+  height: 250px;
+  border: 0px;
+}
+
+.heartstone-commercial3 {
+  grid-area: commercial;
+  height: 250px;
+  padding-left: 70px;
+}
+
+.holiday3 {
+  grid-area: commercial;
+  height: 250px;
+}
+
+.align-right3 {
+  grid-area: commercial;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* region starts here */
+.region-acount3 {
+  grid-area: region;
+  color: #4c5c5b;
+  margin-top: 30px;
+}
+
+.region-dropdown3 {
+  grid-area: region;
+  width: 220px;
+  height: 20px;
+  margin-top: 50px;
+  background-color: #000;
+  color: #fff;
+  border-color: #1e1e1e;
+}
+
+/* install starts here */
+.install-button3 {
+  grid-area: install;
+  background-color: #0d83cc;
+  width: 220px;
+  height: 70px;
+  border: 0px;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 28px;
+}
+
+.add-game3 {
+  grid-area: install;
+  height: 80px;
+  margin-left: 220px;
+  margin-top: 5px;
+}
+
+.already-installed3 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  grid-area: install;
+  color: #4c5c5b;
+  margin-right: 8px;
+}
+
+.locate-game3 {
+  color: #206ca9;
+}
+
+/* arrow starts here */
+.exit-arrow {
+  padding-left: 35px;
+}
+
+.arrow-align3 {
+  grid-area: arrow;
+  display: flex;
+  align-items: flex-end;
+}
+
+/*************************************/
+/*************************************/
+/*************************************/
+/*************************************/
+/*************************************/
+/* INDEX PAGE END */
+/*************************************/
+/*************************************/
+/*************************************/
+/*************************************/
+/*************************************/
+/* SETTINGS PAGE START */
+/* ICONS */
+i {
+  font-family: fontawesome !important;
+}
+
+#sbicon1 {
+  color: #00aedd;
+  font-style: normal;
+  margin-right: 5px;
+}
+
+#contenticon1 {
+  color: #00aedd;
+  font-style: normal;
+  margin-left: 5px;
+}
+
+#bodysettings1 {
+  display: grid;
+  grid-template-columns: 0.8fr 2fr 1fr 0.3fr 0.1fr;
+  grid-template-rows: 0.2fr 2.2fr 0.3fr;
+  grid-template-areas: "header header header header header"
+    "sidebar content content content scroll"
+    "sidebar footer footer footer footer";
+  height: 100vh;
+  width: 98vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #171b23;
+}
+
+#header1 {
+  background-color: #242d3f;
+  grid-area: header;
+}
+
+#sidebar1 {
+  background-color: #12161c;
+  grid-area: sidebar;
+}
+
+#content1 {
+  background-color: #171b23;
+  grid-area: content;
+}
+
+#scroll1 {
+  background-color: #171b23;
+  grid-area: scroll;
+}
+
+#footer1 {
+  background-color: #243040;
+  grid-area: footer;
+  height: 80px;
+}
+
+/* HEADER */
+.x1 {
+  color: #5d6065;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.header1 {
+  color: #ffffff;
+  margin-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+/* HEADERBAR */
+.align1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SIDEBAR */
+.sidebar1 {
+  color: #b3b3b3;
+  font-size: 12px;
+  line-height: 30px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.sbfooter1 {
+  margin-top: 140px;
+  margin-left: 0px;
+  font-weight: lighter;
+}
+
+/* LINKS */
+.sttngslnk1, .xx1 {
+  text-decoration: none;
+  color: #b3b3b3;
+}
+
+.sttngslnk1:hover {
+  color: #ffffff;
+}
+
+/* CONTENT BOX */
+.content1 {
+  color: #b3b3b3;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.ctitle1 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.ccontentone1 {
+  margin-left: 30px;
+}
+
+.ccontenttwo1 {
+  margin-left: 55px;
+  color: #5d6065;
+}
+
+.ccontentthree1 {
+  margin-left: 30px;
+}
+
+.ccontentfour1 {
+  margin-left: 30px;
+}
+
+.ccontentfive1 {
+  margin-left: 55px;
+}
+
+.clowres1 {
+  color: #5d6065;
+}
+
+.clowresb1 {
+  margin-left: 50px;
+}
+
+/* FOOTER */
+.footer1 {
+  color: #b3b3b3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* BUTTONS */
+.cbutton1 {
+  background-color: #1b2430;
+  color: #00aedd;
+  border-color: #b3b3b3;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.clowresb1 {
+  color: #5d6065;
+  margin-left: 20px;
+}
+
+/* FOOTER BUTTONS */
+.fbutton1 {
+  background-color: #1b2430;
+  color: #00aedd;
+  border-color: #b3b3b3;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.fbuttontwo1 {
+  background-color: #0785c0;
+  color: #ffffff;
+  border: 1;
+  border-color: #0785c0;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100px;
+  margin-top: 12px;
+  margin-right: 20px;
+}
+
+/* DROPDOWNS */
+.slct1 {
+  background-color: #0e1015;
+  color: #b3b3b3;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 120px;
+  border-radius: 3px;
+}
+
+.slcttwo1 {
+  background-color: #0e1015;
+  color: #b3b3b3;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 250px;
+  border-radius: 3px;
+}
+
+.slctthree1 {
+  background-color: #0e1015;
+  color: #b3b3b3;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 239px;
+  border-radius: 3px;
+}
+
+/* CHECKBOXES */
+input[type=checkbox] {
+  visibility: hidden;
+}
+
+/* CHECKBOX 1 */
+.checkbox1 {
+  width: 10px;
+  margin: 10px 1px;
+  position: absolute;
+}
+
+.checkbox1 label {
+  cursor: pointer;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  background: #0e1015;
+  border: 1px solid #5d6065;
+  border-radius: 3px;
+}
+
+.checkbox1 label:after {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background: solid;
+  top: 3px;
+  left: 3px;
+  border: 3px solid #333;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+}
+
+.checkbox1 label:hover::after {
+  opacity: 0.5;
+}
+
+.checkbox1 input[type=checkbox]:checked+label:after {
+  opacity: 5;
+}
+
+/* CHECKBOX 2 */
+.checkboxtwo1 {
+  width: 10px;
+  margin: 0px 25px;
+  position: absolute;
+}
+
+.checkboxtwo1 label {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  background: #171b23;
+  border: 1px solid #5d6065;
+  border-radius: 3px;
+}
+
+.checkboxtwo1 label:hover::after {
+  opacity: 0.5;
+}
+
+.checkboxtwo1 input[type=checkbox]:checked+label:after {
+  opacity: 5;
+}
+
+/*CHECKBOX 3 */
+.checkboxthree1 {
+  width: 10px;
+  margin-top: 0px;
+  position: absolute;
+}
+
+.checkboxthree1 label {
+  cursor: pointer;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  background: #0e1015;
+  border: 1px solid #5d6065;
+  border-radius: 3px;
+}
+
+.checkboxthree1 label:after {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background: solid;
+  top: 3px;
+  left: 3px;
+  border: 3px solid #333;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+}
+
+.checkboxthree1 label:hover::after {
+  opacity: 0.5;
+}
+
+.checkboxthree1 input[type=checkbox]:checked+label:after {
+  opacity: 5;
+}
+
+/* CHECKBOX 4 */
+.checkboxfour1 {
+  width: 10px;
+  margin: 0px 1px;
+  position: absolute;
+}
+
+.checkboxfour1 label {
+  cursor: pointer;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  background: #0e1015;
+  border: 1px solid #5d6065;
+  border-radius: 3px;
+}
+
+.checkboxfour1 label:after {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background: solid;
+  top: 3px;
+  left: 3px;
+  border: 3px solid #333;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+}
+
+.checkboxfour1 label:hover::after {
+  opacity: 0.5;
+}
+
+.checkboxfour1 input[type=checkbox]:checked+label:after {
+  opacity: 5;
+}
+
+/* CHECKBOX 5 */
+.checkboxfive1 {
+  width: 10px;
+  margin: 0px 25px;
+  position: absolute;
+}
+
+.checkboxfive1 label {
+  cursor: pointer;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  background: #0e1015;
+  border: 1px solid #5d6065;
+  border-radius: 3px;
+}
+
+.checkboxfive1 label:after {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background: solid;
+  top: 3px;
+  left: 3px;
+  border: 3px solid #333;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+}
+
+.checkboxfive1 label:hover::after {
+  opacity: 0.5;
+}
+
+.checkboxfive1 input[type=checkbox]:checked+label:after {
+  opacity: 5;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* SETTINGS PAGE END */
+/*************************************/
+/*************************************/
+/*************************************/
+/*************************************/
+/*************************************/
+/* NEWS PAGE START */
+#body4 {
+  background-image: url(images/newsbg4.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+/* 2ND BANNER */
+.links4>* {
+  text-decoration: none;
+  color: #b3b3b3;
+  margin-top: 0px;
+  margin-left: 13px;
+}
+
+.links4>*:hover {
+  text-shadow: 1px 1px #fff;
+}
+
+.bannernews4 {
+  margin-left: 55px;
+}
+
+/* NEWS */
+.recentnews4 {
+  margin-top: 30px;
+  margin-left: 300px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 800;
+  text-shadow: 1px 1px #b3b3b3;
+}
+
+.newscontent4 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.newslink4 {
+  text-decoration: none;
+  color: #b3b3b3;
+}
+
+.newsimg4 {
+  height: auto;
+  margin-left: 300px;
+  max-width: 250px;
+  padding-top:
+    padding-bottom: 10px;
+  padding-right: 10px;
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
+}
+
+.newsdescr4 {
+  height: 40%;
+  width: 40%;
+  line-height: 14px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: flex-start;
+}
+
+.subject4 {
+  color: #747474;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.title4 {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.summary4 {
+  color: #b3b3b3;
+}
+
+.comments4 {
+  color: #0785c0;
+}
+
+.date4 {
+  color: #747474;
+}
+
+/* NEWS PAGE END */
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/

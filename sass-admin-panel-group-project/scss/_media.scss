@@ -1,0 +1,143 @@
+@media only screen and (min-width: 767px) {
+  .wrapper {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 14rem auto; //RESPONSIVE
+    grid-template-areas: "side head" "side main" "side footer";
+  }
+
+  header .user ul a.notification-wrapper p {
+    display: block;
+  }
+
+  .searchbar input {
+    width: 20rem;
+  }
+
+  .searchbar .user {
+    .fas {
+      margin: 0 15px 0 0;
+      color: #5a5c69;
+    }
+
+    .user-image {
+      margin-left: 15px;
+    }
+  }
+
+  nav {
+    width: 14rem;
+
+    .res-noshow {
+      display: block;
+    }
+
+    .navigation-bar h2 {
+      margin: 5px 0;
+      display: block;
+      text-align: left;
+    }
+
+    .navigation-bar h3 {
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 0.65rem;
+      text-align: left;
+      margin: 15px 0 0 15px;
+    }
+  }
+
+  .drop-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+
+    i:last-child {
+      display: block;
+      margin-left: auto;
+    }
+
+    .div {
+      font-weight: 400;
+    }
+  }
+
+  .resp-i {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    .info-card-small {
+      width: 25%;
+      max-width: 25%;
+      @include basic-card;
+    }
+
+    .info-card-monthly {
+      @include info-card-small($Primary);
+    }
+
+    .info-card-annual {
+      @include info-card-small($Success);
+    }
+
+    .info-card-tasks {
+      @include info-card-small($Info);
+
+      .progress-bar {
+        @include progress-bar($Info);
+      }
+    }
+
+    .info-card-pending-requests {
+      @include info-card-small($Warning);
+    }
+  }
+
+  .flex-row-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    .earnings {
+      flex-grow: 2;
+      width: 60%;
+    }
+
+    .revenue {
+      flex-grow: 1;
+    }
+  }
+
+  .flex-column-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .flex-column {
+      width: 50%;
+    }
+  }
+
+  .colorCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0.5rem;
+
+    .colorCard {
+      width: 48%;
+    }
+  }
+}

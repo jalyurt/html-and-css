@@ -1,0 +1,148 @@
+@import 'reset', 'variables', 'mixins';
+
+.page-wrapper {
+    font-family: 'Nunito', sans-serif;
+    color: $text-color;
+    display: grid;
+    grid-template: auto / auto auto;
+    grid-template-areas: "sidebar Dashboard";
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.Dashboard {
+    position: relative;
+    grid-area: Dashboard;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    width: auto;
+    h2 {
+        margin-left: 36px;
+    }
+}
+
+.container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    width: auto;
+}
+
+// PANELS
+
+.panel_board {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    z-index: 3;
+    width: 100%;
+}
+
+.panel_board .panel_a {
+    @include panel_block;
+    @extend .panel_a;
+    display: block;
+    border-left: 5px solid $dark-blue;
+    h3 {
+        color: $dark-blue;
+    }
+}
+.panel_board .panel_b {
+    @extend .panel_a;
+    border-left: 5px solid $green;
+    h3 {
+        color: $green;
+    }
+}
+.panel_board .panel_c {
+    @extend .panel_a;
+    border-left: 5px solid $light-blue;
+    h3 {
+        color: $light-blue;
+    }
+    .task-content {
+        background-color: $light-grey;
+        border-radius: 4px;
+        margin-top: 3px;
+        margin-left: 28px;
+        max-height: 20px;
+        width: 80%;
+    }
+    .task-percentage {
+        color: #ffffff;
+        background-color: $light-blue;
+        border-radius: 4px;
+        max-height: 20px;
+        width: 60%;
+    }
+    .task-progress {
+        height: 100%;
+        width: 50%;
+        background-color: $light-blue;
+    }
+}
+
+
+.panel_board .panel_d {
+    @extend .panel_a;
+    border-left: 5px solid $yellow;
+    h3 {
+        color: $yellow;
+    }
+}
+
+// GRAPHS
+.earnings-overview {
+    width: 70%;
+}
+.earnings-overview .graph-body {
+    @include graph_body;
+}
+
+.earnings-overview .graph-heading {
+    @include graph_head;
+}
+
+.earnings-overview #chartContainer {
+    display: block;
+    justify-content: center;
+    transform: scale(0.95);
+    background-color: #ffffff;
+}
+
+.revenue-resources {
+    width: 25%;
+    margin-right: 20px;
+}
+.revenue-resources .graph-heading {
+    @include graph_head;
+}
+
+.revenue-resources .graph-body {
+    @include graph_body;
+}
+
+.graph-body .pie {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+@media screen and (max-width: 767px){
+    .panel_a {
+        width: 90vw;
+    }
+
+    .earnings-overview{
+        width: 90vw;
+        margin-right: 12px;
+
+    }
+    .revenue-resources {
+        width: 90vw;
+        margin-right: 12px;
+    }
+}

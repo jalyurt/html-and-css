@@ -1,0 +1,107 @@
+//WVC: Info-cards on top of Dashboard
+@mixin info-card-small($color) {
+  border-left: 0.25rem solid $color;
+  padding: 1.75rem 1.25rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+
+  .card-text {
+    max-width: 100%;
+    font-weight: 700;
+    margin-right: 0.5rem;
+
+    h2 {
+      color: $color;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      margin-bottom: 0.25rem;
+    }
+
+    p {
+      color: $neonblue;
+      font-size: 1.25rem;
+      line-height: 1.2;
+    }
+  }
+
+  .icon {
+    width: auto;
+    max-width: 100%;
+
+    i {
+      color: $FontAwesomeCards;
+      line-height: 1;
+      display: inline-block;
+      font-weight: 900;
+      font-size: 2em;
+    }
+  }
+}
+//WVC: Basic box layout
+@mixin basic-card {
+  box-shadow: 0 0.15rem 1.75rem 0 $neonblue;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px $neonblue;
+  border-style: dashed;
+
+}
+
+@mixin basic-card-box {
+height:auto;
+margin: 16px;
+box-sizing: border-box;
+}
+
+//WVC: Progress-bars
+@mixin progress-bar($color) {
+  background-color: $color;
+  display: block;
+  height: 100%;
+}
+
+// CS: colorCard
+@mixin colorCard($bgCard) {
+    padding: 1.25rem;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 15px;
+    height: auto;
+    background-color: $bgCard;
+
+    p {
+        color: rgba(255,255,255,.5);
+        font-size: 80%;
+    }
+}
+
+
+
+@mixin dropdown-layout {
+  h4 {
+    padding: 0.5rem 1.5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 0.65rem;
+    color: #b7b9cc;
+    background-color: #031637;
+  }
+  a {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 400;
+    display: block;
+    color: $neonblue;
+    text-decoration: none;
+
+    &:hover {
+
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}

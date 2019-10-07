@@ -1,0 +1,38 @@
+.generate {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #fff;
+    background: -webkit-linear-gradient($neonpink, $Warning);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &:hover {
+      background: -webkit-linear-gradient($Warning, $neonpink);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  h5 {
+    align-self: center;
+  }
+
+  button {
+    font-family: 'Roboto Mono', monospace;
+    background-color: $neonblue;
+    border: none;
+    color: #fff;
+    box-shadow: 0 0.15rem 1.05rem 0 $neonblue;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    height: 60%;
+    align-self: center;
+  }
+}

@@ -1,0 +1,272 @@
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+@import 'components';
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $darkblue;
+}
+
+a {
+	color: $neonpink;
+}
+
+h5 {
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  background: #06307a;
+}
+::-webkit-scrollbar-thumb {
+background-image: linear-gradient(to bottom, $neonpink, $Warning 95%);
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+background-image: linear-gradient(to bottom, $Warning, $neonpink 95%);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 10rem auto; //RESPONSIVE
+    grid-template-areas:
+        "side head"
+        "side main"
+        "side footer";
+}
+
+main {
+    grid-area: main;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+}
+
+.flex-row-container {
+  display: flex;
+  flex-direction: column;  // RESPONSIVE
+  width: 100%;
+}
+
+.flex-column-container {
+  display: flex;
+  flex-direction: column;  // RESPONSIVE
+}
+
+//WVC: Progress-bars main bar layout (container)
+.progress {
+    height: 0.5rem;
+    background-color: #eaecf4;
+
+    max-width: 100%;
+    width: 100%;
+    margin-right: 0.5rem;
+    overflow: hidden;
+    align-self: flex-end;
+    margin-bottom: 0.3rem;
+}
+
+//WVC: Cards on top of HTML - main.scss
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+
+    .info-card-small {
+    width: 100%;
+    @include basic-card;
+    }
+
+    .info-card-monthly {
+    @include info-card-small($Primary);
+    }
+
+    .info-card-annual {
+    @include info-card-small($Success);
+    }
+
+    .info-card-tasks {
+    @include info-card-small($Info);
+        .progress-bar {
+            @include progress-bar($Info);
+        }
+    }
+
+    .info-card-pending-requests {
+    @include info-card-small($Warning);
+    }
+}
+
+//WVC: opmaak h6 flex in section chart
+.chart h6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  //WVC: Progress-bars main bar layout (container)
+  .progress {
+    height: 0.5rem;
+    background-color: #eaecf4;
+
+    max-width: 100%;
+    width: 100%;
+    margin-right: 0.5rem;
+    overflow: hidden;
+    align-self: flex-end;
+    margin-bottom: 0.3rem;
+  }
+
+  //KREMENA: Basic cards header en area
+  .basic-card-box {
+    @include basic-card;
+    @include basic-card-box;
+    .basic-card-header {
+      background-color: $darkblue;
+      border-bottom: 1px solid $neonblue;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      padding: 16px;
+      margin:0;
+      h5 {
+        color:$Primary;
+        font-weight: bold;
+      }
+    }
+    .basic-card-area {
+      padding: 1.25rem;
+      color: $neonblue;
+
+      p {
+        margin-bottom: 16px;
+      }
+      p:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  //WVC: Charts
+  .chart {
+    .server-migration .progress-bar {
+      @include progress-bar($Danger);
+    }
+
+    .sales-tracking .progress-bar {
+      @include progress-bar($Warning);
+    }
+
+    .customer-database .progress-bar {
+      @include progress-bar($neongreen);
+    }
+
+    .payout-details .progress-bar {
+      @include progress-bar($Info);
+    }
+
+    .account-setup .progress-bar {
+      @include progress-bar($Success);
+    }
+
+    .progress {
+      height: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .chart-area div:last-child .progress {
+      margin-bottom: 0;
+    }
+  }
+  //illustrations
+  .illustrations img {
+      width: 25rem;
+  }
+  // wvc: image center
+  .image-center {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+
+    img {
+        width: 100%;
+    }
+  }
+
+
+  //legenda
+  .legend ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    font-size: 14px;
+    li i {
+      margin-right: 5px;
+    }
+    li {
+      margin-right: .5rem;
+      &:nth-child(1) .fas {
+        color: $Primary;
+      }
+      &:nth-child(2) .fas {
+        color: $Success;
+      }
+      &:nth-child(3) .fas {
+        color: $Info;
+      }
+    }
+  }
+
+footer {
+    grid-area: footer;
+    padding: 2rem 0;
+    text-align: center;
+    color: $Warning;
+    p {
+        line-height: 1;
+        font-size: .8rem;
+    }
+
+    .go-top {
+        width: 2.75rem;
+        height: 2.75rem;
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        text-align: center;
+        color: #fff;
+        background-color: $Warning;
+        opacity: 0.6;
+        line-height: 46px;
+
+        &:hover {
+            background-color: $neonpink;
+        }
+
+        i {
+            font-weight: 800;
+            color: #fff;
+        }
+    }
+}
+
+@import "media";

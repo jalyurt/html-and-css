@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SB Admin</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://kit.fontawesome.com/24d7844539.js"></script>
+
+
+
+
+</head>
+
+<body>
+  <div class="wrapper" id="top">
+    <header>
+      <div class="searchbar">
+        <div class="search">
+          <input type="text" class="form-control" placeholder="Search for...">
+          <button class="searchButton" type="button">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+
+        <div class="user">
+          <ul>
+            <li>
+              <a href="#" rel="noreferrer" class="notification-wrapper">
+                <i class="fas fa-bell"></i>
+                <span class="notification">3+</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" rel="noreferrer" class="notification-wrapper">
+                <i class="fas fa-envelope"></i>
+                <span class="notification">7</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" rel="noreferrer" class="notification-wrapper">
+                <p class="username">Valerie Luna</p>
+                <img class="user-image" src="images/user.png" alt="User image">
+              </a>
+            </li>
+          </ul>
+        </div> <!-- End class user -->
+      </div>
+    </header>
+
+    <!-- Navigation bar-->
+    <nav>
+      <h1><i class="fas fa-laugh-wink i-spacing"></i> SB ADMIN²</h1>
+
+      <div class="navigation-bar">
+
+        <hr class="sidebar-divider">
+        <h2><i class="fas fa-tachometer-alt i-spacing"></i>Dashboard</h2>
+
+        <hr class="sidebar-divider">
+
+        <div>
+          <h3>Interface</h3>
+          <ul>
+            <li class="dropdown">
+              <div class="drop-title"><i class="fas fa-folder i-spacing"></i>
+                <p>Components</p><i class="fas fa-chevron-right i-spacing"></i>
+              </div>
+              <div class="dropdown-content">
+                <h4>Custom&nbspcomponents:</h4>
+                <ul>
+                  <li><a href="#">Buttons</a></li>
+                  <li><a href="#">Cards</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li class="dropdown">
+              <div class="drop-title"><i class="fas fa-wrench i-spacing"></i>
+                <p>Utilities</p><i class="fas fa-chevron-right i-spacing"></i>
+              </div>
+              <div class="dropdown-content">
+                <h4>Custom utilities:</h4>
+                <ul>
+                  <li><a href="#">Colors</a></li>
+                  <li><a href="#">Borders</a></li>
+                  <li><a href="#">Animations</a></li>
+                  <li><a href="#">Other</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <hr class="sidebar-divider">
+        <div>
+          <h3>Addons</h3>
+          <ul>
+            <li class="dropdown">
+              <div class="drop-title"><i class="fas fa-folder i-spacing"></i>
+                <p>Pages</p><i class="fas fa-chevron-right i-spacing"></i>
+              </div>
+              <div class="dropdown-content">
+                <h4>Login screens:</h4>
+                <ul>
+                  <li><a href="#">Login</a></li>
+                  <li><a href="#">Register</a></li>
+                  <li><a href="#">Forgot Password</a></li>
+                  <li><a href="#">Other</a></li>
+                </ul>
+                <h4>Other pages:</h4>
+                <ul>
+                  <li><a href="#">404 Page</a></li>
+                  <li><a href="#">Blank Page</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><i class="fas fa-chart-area i-spacing"></i>Charts</li>
+            <li><i class="fas fa-table i-spacing"></i>Tables</li>
+          </ul>
+        </div>
+        <hr class="sidebar-divider">
+        <div class="go-left"><i class="fas fa-chevron-left"></i></div>
+      </div>
+    </nav>
+
+    <!-- main content-->
+    <main>
+      <div class="generate">
+        <h1>計器盤</h1><h5>-Dashboard-</h5>
+        <button><i class="fas fa-download"></i> Generate Report</button>
+      </div>
+      <!-- WVC: Info-cards bovenaan -->
+      <div class="cards-container">
+        <div class="info-card-small info-card-monthly">
+          <div class="card-text">
+            <h2>Earnings (monthly)</h2>
+            <p>$40,000</p>
+          </div>
+          <div class="icon"><i class="fas fa-calendar"></i></div>
+        </div>
+
+        <div class="info-card-small info-card-annual">
+          <div class="card-text">
+            <h2>Earnings (annual)</h2>
+            <p>$215,000</p>
+          </div>
+          <div class="icon"><i class="fas fa-dollar-sign"></i></div>
+        </div>
+
+        <div class="info-card-small info-card-tasks">
+          <div class="card-text">
+            <h2>Tasks</h2>
+            <p>50%</p>
+          </div>
+          <div class="progress">
+            <span class="progress-bar" style="width: 50%"></span>
+          </div>
+          <div class="icon"><i class="fas fa-clipboard-list"></i></div>
+        </div>
+
+        <div class="info-card-small info-card-pending-requests">
+          <div class="card-text">
+            <h2>Pending requests</h2>
+            <p>18</p>
+          </div>
+          <div class="icon"><i class="fas fa-comments"></i></div>
+        </div>
+      </div>
+
+      <div class="flex-row-container">
+        <!-- Earnings Overview -->
+        <section class="basic-card-box earnings ">
+          <div class="basic-card-header header-justify">
+            <h5>Earnings Overview</h5>
+
+
+            <!--KD 4 july-->
+            <ul class="chartdrop">
+              <li class="dropdown">
+                <div class="drop-title"><i class="fas fa-ellipsis-v i-spacing"></i>
+                </div>
+                <div class="dropdown-content">
+                  <h4>Dropdown header:</h4>
+                  <ul>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <hr class="sidebar-divider">
+                    <li><a href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+            <!--KD end-->
+
+
+
+          </div>
+          <div class="basic-card-area image-center"><img src="images/first_chart.png" alt="chart"></div>
+        </section>
+
+
+
+        <!-- Revenue sources-->
+        <section class="basic-card-box revenue">
+          <div class="basic-card-header header-justify">
+            <h5>Revenue Sources</h5>
+
+
+            <!--KD 4 july-->
+
+            <ul class="chartdrop">
+              <li class="dropdown">
+                <div class="drop-title"><i class="fas fa-ellipsis-v i-spacing"></i>
+                </div>
+                <div class="dropdown-content">
+                  <h4>Dropdown header:</h4>
+                  <ul>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <hr class="sidebar-divider">
+                    <li><a href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!--KD end-->
+          <div class="basic-card-area">
+            <div class="image-center"><img src="images/donutchart2.png" alt="chart"></div>
+            <div class="legend">
+              <ul>
+                <li><i class="fas fa-circle text-primary"></i><span>Direct</span></li>
+                <li><i class="fas fa-circle text-primary"></i><span>Social</span></li>
+                <li><i class="fas fa-circle text-primary"></i><span>Referral</span></li>
+              </ul>
+            </div>
+        </section>
+      </div>
+      <div class="flex-column-container">
+        <div class="flex-column">
+          <!-- wvc: chart-section - html -->
+          <section class="chart basic-card-box">
+            <div class="basic-card-header">
+              <h5>Projects</h5>
+            </div>
+
+            <div class="basic-card-area chart-area">
+              <div class="server-migration">
+                <h6>
+                  <span>Server Migration</span>
+                  <span>20%</span>
+                </h6>
+                <div class="progress">
+                  <span class="progress-bar" style="width: 25%"></span>
+                </div>
+              </div>
+
+              <div class="sales-tracking">
+                <h6>
+                  <span>Sales Tracking</span>
+                  <span>40%</span>
+                </h6>
+                <div class="progress">
+                  <span class="progress-bar" style="width: 40%"></span>
+                </div>
+              </div>
+
+              <div class="customer-database">
+                <h6>
+                  <span>Customer Database</span>
+                  <span>60%</span>
+                </h6>
+                <div class="progress">
+                  <span class="progress-bar" style="width: 60%"></span>
+                </div>
+              </div>
+
+              <div class="payout-details">
+                <h6>
+                  <span>Payout Details</span>
+                  <span>80%</span>
+                </h6>
+                <div class="progress">
+                  <span class="progress-bar" style="width: 80%"></span>
+                </div>
+              </div>
+
+              <div class="account-setup">
+                <h6>
+                  <span>Account Setup</span>
+                  <span>Complete!</span>
+                </h6>
+                <div class="progress">
+                  <span class="progress-bar" style="width: 100%"></span>
+                </div>
+              </div>
+            </div> <!-- end chart area -->
+          </section> <!-- end chart section -->
+
+          <!-- CS: color boxes-->
+          <section class="colorCards">
+            <div class="colorCards">
+              <div class="colorCard Primary">
+                Primary
+                <p>#4e73df</p>
+              </div>
+              <div class="colorCard Success">
+                Success
+                <p>#1cc88a</p>
+              </div>
+              <div class="colorCard Info">
+                Info
+                <p>#36b9cc</p>
+              </div>
+              <div class="colorCard Warning">
+                Warning
+                <p>#f6c23e</p>
+              </div>
+              <div class="colorCard Danger">
+                Danger
+                <p>#e74a3b</p>
+              </div>
+              <div class="colorCard Secondary">
+                Secondary
+                <p>#858796</p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="flex-column">
+          <!-- Illustrations-->
+          <section class="illustrations basic-card-box">
+            <div class="basic-card-header">
+              <h5>Illustrations</h5>
+            </div>
+            <div class="basic-card-area">
+              <div class="image-center">
+                <img src="images/undraw_posting_photo.svg" alt="Undraw posting photo">
+              </div>
+              <p>
+                Add some quality, svg illustrations to your project courtesy of <a target="_blank" rel="nofollow" href="https://undraw.co/">unDraw</a>, a constantly updated collection of beautiful svg images that you can use completely free and
+                without attribution!
+              </p>
+              <p><a href="https://undraw.co/" target="_blank" rel='noreferrer'>Browse Illustrations on unDraw →</a></p>
+            </div>
+          </section>
+
+          <section class="basic-card-box">
+            <div class="basic-card-header">
+              <h5>Development Approach</h5>
+            </div>
+            <div class="basic-card-area">
+              <p>
+                SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce CSS bloat and poor page performance. Custom CSS classes are used to create custom components and custom utility classes.
+              </p>
+
+              <p>
+                Before working with this theme, you should become familiar with the Bootstrap framework, especially the utility classes.
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright © Your Website 2019</p>
+      <div class="go-top">
+        <a href="#top"><i class="fas fa-chevron-up"></i></a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>

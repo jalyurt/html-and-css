@@ -1,0 +1,29 @@
+@mixin cardheader {
+  padding: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: $card-header;
+  background-color: $light-grey;
+  margin-bottom: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+@mixin cardmarkup {
+  max-width: 388px;
+  height: auto;
+  color: $dark-grey;
+  font-size: 12.8px;
+  border-radius: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  display: grid;
+  grid-area: content;
+  @include box-shadow
+}
+
+@mixin cardcontent {
+  max-width: 360px;
+  margin: 0 10px 8px;
+}

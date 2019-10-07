@@ -1,0 +1,67 @@
+@import 'variables', 'mixins';
+
+.projects {
+  @include box-shadow;
+  margin-left: 18px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  max-width: 388px;
+  border-radius: 10px;
+  display: grid;
+  grid-area: content;
+
+  .projectsbar-grey {
+    background-color: #eaecf4;
+    border-radius: 5px;
+    margin: 0 10px 24px;
+    max-width: 360px;
+    height: 16px;
+  }
+
+  .projects-header {
+    @include cardheader
+  }
+
+  .projects {
+    @include cardmarkup
+  }
+
+  .projects-subject {
+    @include cardcontent
+  }
+
+  .projectsbar-red {
+    @include projectsbar-color($red, 20%);
+  }
+
+  .projectsbar-yellow {
+    @include projectsbar-color($yellow, 40%);
+  }
+
+  .projectsbar-darkblue {
+    @include projectsbar-color($dark-blue, 60%);
+  }
+
+  .projectsbar-lightblue {
+    @include projectsbar-color($light-blue, 80%);
+  }
+
+  .projectsbar-green {
+    @include projectsbar-color($green, 100%);
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .projects-subject {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 560px) {
+  .projects {
+    width: 70%;
+  }
+}

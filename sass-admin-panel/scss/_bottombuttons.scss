@@ -1,0 +1,65 @@
+@import 'variables', 'mixins';
+
+.bottombuttons {
+  width: 388px;
+  height: 327px;
+  padding: 0 12px;
+  margin-left: 18px;
+  line-height: 1.5;
+  display: grid;
+  grid-area: content;
+
+  .buttoncolorname {
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .buttoncolorcode {
+    font-size: 12.8px;
+    color: $light-grey;
+  }
+
+  .bottombutton-darkblue {
+    @include bottombuttons($dark-blue);
+  }
+
+  .bottombutton-green {
+    @include bottombuttons($green);
+  }
+
+  .bottombutton-lightblue {
+    @include bottombuttons($light-blue);
+  }
+
+  .bottombutton-yellow {
+    @include bottombuttons($yellow);
+  }
+
+  .bottombutton-red {
+    @include bottombuttons($red);
+  }
+
+  .bottombutton-grey {
+    @include bottombuttons($dark-grey);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .bottombuttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 560px) {
+  .bottombutton-darkblue,
+  .bottombutton-green,
+  .bottombutton-grey,
+  .bottombutton-lightblue,
+  .bottombutton-red,
+  .bottombutton-yellow {
+    margin-bottom: 20px;
+  }
+}

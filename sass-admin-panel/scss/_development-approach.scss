@@ -1,0 +1,13 @@
+@import 'cardjal';
+
+.development-header {
+  @include cardheader
+}
+
+.development-approach {
+  @include cardmarkup;
+}
+
+.development-content {
+  @include cardcontent
+}

@@ -1,0 +1,269 @@
+@import "variables", "mixins";
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: $dark-blue;
+    color: #fff;
+
+    .sidebar-top {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        @include padding($tdir: 24px, $bdir: 24px);
+
+        i {
+            @include text-style(bold, 2em);
+            transform: rotateZ(-15deg);
+        }
+
+        span {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+
+    .list-item {
+        @include padding();
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: scale-color(#fff, $alpha: -50%);
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: #fff;
+        }
+
+        span {
+            @include text-style($size: 0.6rem);
+        }
+    }
+
+    .dropdown {
+        @include padding();
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: scale-color(#fff, $alpha: -50%);
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: #fff;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                @include text-style($size: 0.6rem);
+            }
+
+            .drop-icon {
+                display: none;
+            }
+        }
+
+        ul {
+            display: none;
+        }
+    }
+
+    .dropdown.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        ul {
+            z-index: 10;
+            position: absolute;
+            top: -10px;
+            right: -175px;
+            display: block;
+            @include text-style($size: 0.8rem);
+            min-width: 10rem;
+            margin-top: 15px;
+            background-color: #fff;
+            border-radius: 7px;
+            li {
+                @include padding($tdir: 12px, $bdir: 12px);
+                .drop-heading {
+                    color: #bbb9cc;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .sidebar-subheading {
+        @include padding($tdir: 0px, $bdir: 0px);
+        @include text-style(900, 0.6rem);
+        color: scale-color(#fff, $alpha: -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+    }
+
+    .sidebar-divider-top {
+        margin: 0px 16px;
+        border: 0.5px solid scale-color(#fff, $alpha: -92%);
+    }
+
+    .sidebar-divider-list {
+        margin: 0px 16px 16px 16px;
+        border: 0.5px solid scale-color(#fff, $alpha: -92%);
+    }
+
+    .last-divider {
+        display: none;
+    }
+
+    .insidebar-toggle {
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+    .sidebar {
+        width: 6.5rem;
+    }
+
+    .sidebar-header {
+        display: none
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    .sidebar {
+        width: 14rem;
+        display: flex;
+        flex-direction: column;
+
+        .sidebar-subheading {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .sidebar-top {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .list-item {
+            @include padding($tdir: 16px, $bdir: 16px);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: #fff;
+            }
+
+            i {
+                padding-right: 10px;
+            }
+
+            span {
+                @include text-style($size: 0.9rem);
+            }
+        }
+
+        .dropdown {
+            @include padding($tdir: 16px, $bdir: 16px);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: #fff;
+            }
+
+            .drop-header {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+
+                i {
+                    padding-right: 10px;
+                }
+
+                span {
+                    @include text-style($size: 0.9rem);
+                }
+
+                .drop-icon {
+                    display: block;
+                    margin-left: auto;
+                }
+            }
+        }
+        .dropdown.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            ul {
+                z-index: 10;
+                position: inherit;
+                top: inherit;
+                right: inherit;
+                display: block;
+                @include text-style($size: 0.8rem);
+                min-width: 10rem;
+                margin-top: 15px;
+                background-color: #fff;
+                border-radius: 7px;
+                li {
+                    @include padding($tdir: 12px, $bdir: 12px);
+                    .drop-heading {
+                        color: #bbb9cc;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+
+
+        .last-divider {
+            display: block
+        }
+
+        .insidebar-toggle {
+            display: block;
+            margin: 0 auto;
+            padding: 8px 15px;
+            border-radius: 50%;
+            background-color: scale-color($color: #fff, $alpha: -80%);
+            color: scale-color($color: #fff, $alpha: -55%);
+
+            &:hover {
+                color: #fff;
+                background-color: scale-color($color: #fff, $alpha: -50%);
+            }
+        }
+    }
+}

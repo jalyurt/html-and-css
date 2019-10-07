@@ -1,0 +1,17 @@
+.footer {
+  color: $dark-grey;
+  width: 100%;
+  font-size: 12.8px;
+  display: grid;
+  grid-area: content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 560px) {
+  .footer {
+    visibility: hidden;
+  }
+}

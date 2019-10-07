@@ -1,0 +1,38 @@
+.colorCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0.5rem;
+}
+// CS: add bg-color to colorCard
+.colorCard.Primary {
+  @include basic-card;
+  @include colorCard($neonblue);
+}
+
+.colorCard.Success {
+  @include basic-card;
+  @include colorCard($Success);
+}
+
+.colorCard.Info {
+  @include basic-card;
+  @include colorCard($Info);
+}
+
+.colorCard.Warning {
+  @include basic-card;
+  @include colorCard($Warning);
+}
+
+.colorCard.Danger {
+  @include basic-card;
+  @include colorCard($Danger);
+}
+
+.colorCard.Secondary {
+  @include basic-card;
+  @include colorCard($neongreen);
+}

@@ -1,0 +1,19 @@
+@import 'reset', 'variables', 'mixins', 'components';
+
+.page-wrapper {
+    font-family: 'Nunito', sans-serif;
+    color: $text-color;
+    display: grid;
+    grid-template: auto / auto auto;
+    grid-template-areas: "sidebar content"
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+.container {
+    margin-left: 15px;
+}
+.content {
+    grid-area: content;
+}

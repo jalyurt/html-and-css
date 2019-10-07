@@ -1,0 +1,41 @@
+@import 'cardjal';
+
+.illustrations-header {
+  @include cardheader
+}
+
+.illustrations {
+  @include cardmarkup;
+  @include box-shadow;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.illustrations-img {
+  img {
+    max-width: 350px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+  }
+}
+
+.illustrations-content {
+  @include cardcontent;
+  img {
+    max-width: 350px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+  }
+}
+
+
+.illustrations-link {
+  text-decoration: none;
+  color: $dark-blue;
+  margin-left: 10px;
+}
+
+.undraw-link {
+  text-decoration: none;
+  color: $dark-blue;
+}

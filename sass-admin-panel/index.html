@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/27e67ac84a.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <title>Admin Panel</title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <!--Sidebar-html-->
+        <ul class="sidebar">
+            <!--Sidebar - Header-->
+            <li class="sidebar-top">
+                <i class="fas fa-laugh-wink"></i></i>
+                <span class=sidebar-header>sb admin ²</span>
+            </li>
+            <hr class="sidebar-divider-top">
+            <!--Divider-->
+            <!--Dashboard-secion-->
+            <li class="list-item">
+                <i class="fas fa-tachometer-alt"></i>
+                <span class="drop-text">Dashboard</span>
+            </li>
+            <hr class="sidebar-divider-list">
+            <!--Divider-->
+            <!--Interface-section-->
+            <div class="sidebar-subheading">Interface</div>
+            <li class="dropdown">
+                <div class="drop-header">
+                    <i class="fas fa-cog"></i>
+                    <span class="drop-text">Components</span>
+                    <i class="drop-icon fas fa-angle-right"></i>
+                </div>
+                <ul class="drop-components">
+                    <li>
+                        <h5 class="drop-heading">Custom Components:</h5>
+                    </li>
+                    <li><a href="#">Buttons</a></li>
+                    <li><a href="#">Cards</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <div class="drop-header">
+                    <i class="fas fa-wrench"></i>
+                    <span class="drop-text">Utilities</span>
+                    <i class="drop-icon fas fa-angle-right"></i>
+                </div>
+                <ul class="drop-components">
+                    <li>
+                        <h5 class="drop-heading">Custom Utilities:</h5>
+                    </li>
+                    <li><a href="#">Colors</a></li>
+                    <li><a href="#">Borders</a></li>
+                    <li><a href="#">Animations</a></li>
+                    <li><a href="#">Other</a></li>
+                </ul>
+            </li>
+            <hr class="sidebar-divider-list">
+            <!--Divider-->
+            <!--Interface-section-->
+            <div class="sidebar-subheading">Addons</div>
+            <li class="dropdown">
+                <div class="drop-header">
+                    <i class="fas fa-folder"></i>
+                    <span class="drop-text">Pages</span>
+                    <i class="drop-icon fas fa-angle-right"></i>
+                </div>
+                <ul class="drop-components">
+                    <li>
+                        <h5 class="drop-heading">Login Screens:</h5>
+                    </li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Forgot Password</a></li>
+                    <li>
+                        <h5 class="drop-heading">Other Pages:</h5>
+                    </li>
+                    <li><a href="#">404 Page</a></li>
+                    <li><a href="#">Blank Page</a></li>
+                </ul>
+            </li>
+            <li class="list-item">
+                <i class="fas fa-chart-area"></i>
+                <span class="drop-text">Charts</span>
+            </li>
+            <li class="list-item">
+                <i class="fas fa-table"></i>
+                <span class="drop-text">Tables</span>
+            </li>
+            <hr class="sidebar-divider-list last-divider">
+            <!--Divider-->
+            <div class="insidebar-toggle">
+                <i class="fas fa-angle-left"></i>
+            </div>
+        </ul>
+        <div class="main-content">
+            <div class="top-bar">
+                <div class="search">
+                    <div class="hamburger-menu">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <form class="searchbar" action="#">
+                        <input type="text" placeholder="Search for ..." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="status">
+                    <ul>
+                        <li><i class="fa fa-search"></i></li>
+                        <li class="dropdown">
+                            <a href="#"><i class="fas fa-bell">
+                                <div class="alert-numbers">
+                                    3+
+                                </div>
+                            </i></a>
+                            <div class="dropdown-list">
+                                <h5 class="dropdown-header">Alerts center</h5>
+                                <div class="alert">
+                                    <div class="alert-icon">
+                                        <i class="far fa-file-alt"></i>
+                                    </div>
+                                    <div class="alert-text">
+                                        <div class="small-text">December 12, 2019</div>
+                                        <div class="span">A new monthly report is ready to download</div>
+                                    </div>
+                                </div>
+                                <div class="alert">
+                                    <div class="alert-icon">
+                                        <i class="fas fa-donate"></i>
+                                    </div>
+                                    <div class="alert-text">
+                                        <div class="small-text">December 7, 2019</div>
+                                        <div class="span">$290.29 has been deposited into your account!</div>
+                                    </div>
+                                </div>
+                                <div class="alert">
+                                    <div class="alert-icon">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                    </div>
+                                    <div class="alert-text">
+                                        <div class="small-text">December 2, 2019</div>
+                                        <div class="span">
+                                            Spending Alert: We've noticed unusually high spending for your account.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="li dropdown">
+                            <a href="#"> <i class="fas fa-envelope">
+                                    <div class="alert-numbers">
+                                            7
+                                        </div>
+                            </i>
+                            </a>
+                            <div class="dropdown-list">
+                                <h5 class="dropdown-header">Message center</h5>
+                                <div class="alert">
+                                    <div class="message-icon">
+                                        <img src="./img/message-profile-1.jpeg" alt="profile pic">
+                                    </div>
+                                    <div class="alert-text">
+                                        <div class="span">Hi there! I am wondering if you c...</div>
+                                        <div class="small-text">
+                                            Emily Flower - 58m
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="alert">
+                                    <div class="message-icon">
+                                        <img src="./img/message-profile-2.jpeg" alt="profile pic">
+                                    </div>
+                                    <div class="alert-text">
+                                        <div class="span"> I have the photos that you orde...
+                                        </div>
+                                        <div class="small-text">
+                                            Jae Chun - 1d
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="alert">
+                                    <div class="message-icon">
+                                        <img src="./img/message-profile-3.jpeg" alt="profile pic">
+                                    </div>
+                                    <div class="alert-text">
+                                        <div class="span">
+                                            Last month's reports looks great...
+                                        </div>
+                                        <div class="small-text">
+                                            Morgan Alvarez - 2d
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="alert">
+                                    <div class="message-icon">
+                                        <img src="./img/message-profile-4.jpeg" alt="profile pic">
+                                    </div>
+                                    <div class="alert-text">
+                                        <div class="span">
+                                            Am I a good boy? The reason I ...
+                                        </div>
+                                        <div class="small-text">Chicken the dog - 2w</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="divider"></div>
+                        </li>
+                        <li>Valerie Luna</li>
+                        <li class="dropdown">
+                            <a href="#">                                    <img src="./img/top-avatar.jpeg" alt="avatar">
+                            </a>
+                            <div class="dropdown-list profile-settings">
+                                <div><i class="fas fa-user"></i> Profile</div>
+                                <div><i class="fas fa-cogs"></i> Settings</div>
+                                <div><i class="fas fa-list"></i> Activity Log</div>
+                                <div class="divider"></div>
+                                <div><i class="fas fa-sign-out-alt"></i> Logout</div>
+                            <div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div class="panel"></div>
+                    <div class="Dashboard">
+                        <h2>Dashboard</h2>
+                        <div class="container">
+                            <div class="panel_board">
+                                <div class="panel_a">
+                                    <div class="panel_content">
+                                        <h3>EARNINGS (MONTHLY)</h3>
+                                        <p>$ 40,000</p>
+                                    </div>
+                                </div>
+                                <div class="panel_b">
+                                    <div class="panel_content">
+                                        <h3>EARNINGS (ANNUAL)</h3>
+                                        <p>$ 201,000</p>
+                                    </div>
+                                </div>
+                                <div class="panel_c">
+                                    <div class="panel_content">
+                                        <h3>TASKS</h3>
+                                        <div class="task-content">
+                                          <div class="task-percentage">60%</div>
+                                        </div>
+                                        <div class="task-bar">
+                                             <div class="task-progress"></div>
+                                        </div>
+                                     </div>
+                                </div>
+                                <div class="panel_d">
+                                    <div class="panel_content">
+                                        <h3>PENDING REQUESTS</h3>
+                                        <p>18</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="earnings-overview">
+                                <div class="graph-heading">
+                                    <h3>Earnings Overview</h3>
+                                </div>
+                                <div class="graph-body">
+                                    <div id="chartContainer" style="height: 200px; width: 100%;">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="revenue-resources">
+                                <div class="graph-heading">
+                                    <h3>Revenue Resources</h3>
+                                </div>
+                                <div class="graph-body">
+                                    <img class="pie" src="img/pyramid.svg" alt="pyramid">
+                                </div>
+                            </div>
+                            <div class="footer">
+                            </div>
+                        </div> <!-- container -->
+                    </div> <!-- dashboard -->
+                    <div class="bottom-4-panels">
+
+                        <!-- PROJECTS -->
+                        <div class="project-and-buttons">
+                            <div class="projects">
+                                <div class="projects-header">Projects</div>
+
+                                <div class="projects-subject">
+                                    <div class="projects-title">Server Migration</div>
+                                    <div class="projects-percentage">20%</div>
+                                </div>
+                                <div class="projectsbar-grey">
+                                    <div class="projectsbar-red"></div>
+                                </div>
+
+                                <div class="projects-subject">
+                                    <div class="projects-title">Sales Tracking</div>
+                                    <div class="projects-percentage">40%</div>
+                                </div>
+                                <div class="projectsbar-grey">
+                                    <div class="projectsbar-yellow"></div>
+                                </div>
+
+                                <div class="projects-subject">
+                                    <div class="projects-title">Customer Database</div>
+                                    <div class="projects-percentage">60%</div>
+                                </div>
+                                <div class="projectsbar-grey">
+                                    <div class="projectsbar-darkblue"></div>
+                                </div>
+
+                                <div class="projects-subject">
+                                    <div class="projects-title">Payout Details</div>
+                                    <div class="projects-percentage">80%</div>
+                                </div>
+                                <div class="projectsbar-grey">
+                                    <div class="projectsbar-lightblue"></div>
+                                </div>
+
+                                <div class="projects-subject">
+                                    <div class="projects-title">Account Setup</div>
+                                    <div class="projects-percentage">Complete!</div>
+                                </div>
+                                <div class="projectsbar-grey">
+                                    <div class="projectsbar-green"></div>
+                                </div>
+
+                            </div>
+
+                            <!-- BOTTOM BUTTONS -->
+                            <div class="bottombuttons">
+                                <div class="bottombutton-darkblue">
+                                    <p class="buttoncolorname">Primary</p>
+                                    <p class="buttoncolorcode">#4e73df</p>
+                                </div>
+
+                                <div class="bottombutton-green">
+                                    <p class="buttoncolorname">Success</p>
+                                    <p class="buttoncolorcode">#1cc88a</p>
+                                </div>
+
+                                <div class="bottombutton-lightblue">
+                                    <p class="buttoncolorname">Info</p>
+                                    <p class="buttoncolorcode">#36b9cc</p>
+                                </div>
+
+                                <div class="bottombutton-yellow">
+                                    <p class="buttoncolorname">Warning</p>
+                                    <p class="buttoncolorcode">#f6c23e</p>
+                                </div>
+
+                                <div class="bottombutton-red">
+                                    <p class="buttoncolorname">Danger</p>
+                                    <p class="buttoncolorcode">#e74a3b</p>
+                                </div>
+
+                                <div class="bottombutton-grey">
+                                    <p class="buttoncolorname">Secondary</p>
+                                    <p class="buttoncolorcode">#858796</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="illu-and-develop">
+                            <!-- ILLUSTRATIONS -->
+                            <div class="illustrations">
+                                <div class="illustrations-header">Illustrations</div>
+                                <div class="illustrations-img"><img src="img/illustrations.svg"
+                                        alt="illustrations"></div>
+                                <p class="illustrations-content">Add some quality, svg illustrations
+                                    to your project courtesy of <a href="#" class="undraw-link">unDraw</a>, a constantly
+                                    updated
+                                    collection of beautiful svg images that you can use completely
+                                    free and without attribution!</p>
+                                <a href="#" class="illustrations-link">Browse Illustrations on unDraw →</a>
+                            </div>
+
+                            <!-- DEVELOPMENT APPROACH -->
+                            <div class="development-approach">
+                                <div class="development-header">Development Approach</div>
+                                <p class="development-content">SB Admin 2 makes extensive use of Bootstrap 4 utility
+                                    classes
+                                    in order to reduce CSS bloat and poor page performance.
+                                    Custom CSS classes are used to create custom components and
+                                    custom utility classes.</br></br>
+                                    Before working with this theme, you should become familiar
+                                    with the Bootstrap framework, especially the utility classes.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <p>Copyright &copy; Your Website 2019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script/dropdown.js"></script>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+
+</html>

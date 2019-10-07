@@ -1,0 +1,88 @@
+html, body {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#minefield {
+  width: 380px;
+  height: 380px;
+  background-color: lightgrey;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between
+}
+
+.frame {
+  height: 390px;
+  width: 390px;
+  background-color: darkgrey;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  background-color: darkgrey;
+}
+
+.discovered {
+  width: 40px;
+  height: 40px;
+  background-color: lightgrey;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discovered > div {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.discovered > div:hover {
+  opacity: 1;
+}
+
+
+.hidden {
+  width: 40px;
+  height: 40px;
+  background-color: lightgrey;
+  border-right-style: dotted;
+  border-bottom-style: dotted;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one {
+  font-size: 35px;
+  font-family: arial;
+  text-align: center;
+  color: blue;
+}
+
+.two {
+  font-size: 35px;
+  font-family: arial;
+  text-align: center;
+  color: green;
+}
+
+.three {
+  font-size: 35px;
+  font-family: arial;
+  text-align: center;
+  color: red;

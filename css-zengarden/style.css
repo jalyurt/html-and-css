@@ -1,0 +1,220 @@
+@font-face {
+font-family: "Intro_Inline";
+src: url("fonts/Intro_Inline.eot");
+src:
+url("fonts/intro_inline-webfont.woff") format("woff"),
+url("fonts/intro_inline-webfont.woff2") format("woff2");
+font-style: normal;
+font-weight: bold;
+
+}
+.page-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-content: center;
+}
+#css-zen-garden {
+  font-family: sans;
+  font-style: narrow;
+  font-weight: 100;
+  font-size: 17px;
+  color: white;
+  text-shadow: 2px 2px #000000;
+  background-image: url("https://images.pexels.com/photos/1227648/pexels-photo-1227648.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-color: #0d2618;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.5;
+  border: 2px solid white;
+  width: 50%;
+  margin: auto;
+}
+h1 {
+  font-family: "Intro_Inline";
+  font-weight: bold;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  text-decoration: overline;
+}
+h1:hover {
+  color: #00582c;
+  text-shadow: 3px 3px black;
+  transition: 3s;
+}
+h2 {
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+}
+h2:hover {
+  color: #00582c;
+  text-shadow: 3px 3px black;
+  transition: 3s;
+}
+h3 {
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  text-decoration: overline;
+}
+h3:hover {
+  color: #00582c;
+  text-shadow: 3px 3px black;
+  transition: 3s;
+}
+a {
+  color: #00582c;
+  font-weight: 550;
+}
+a:hover {
+  color: white;
+  font-size: 18px;
+  transition: 1s;
+}
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 500px;
+  background-color: grey;
+  opacity: 10;
+  border-radius: 10px;
+  border: 1px  solid #001a00;
+  border-style: dashed;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
+.preamble {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  width: 500px;
+  background-color: grey;
+  opacity: 10;
+  border-radius: 10px;
+  border: 1px  solid #001a00;
+  border-style: dashed;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
+.explanation {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 500px;
+  background-color: grey;
+  opacity: 10;
+  border-radius: 10px;
+  border: 1px  solid #001a00;
+  border-style: dashed;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
+.participation {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  width: 500px;
+  background-color: grey;
+  opacity: 10;
+  border-radius: 10px;
+  border: 1px  solid #001a00;
+  border-style: dashed;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
+.benefits {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 500px;
+  background-color: grey;
+  opacity: 10;
+  border-radius: 10px;
+  border: 1px  solid #001a00;
+  border-style: dashed;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
+.requirements {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  width: 500px;
+  background-color: grey;
+  opacity: 10;
+  border-radius: 10px;
+  border: 1px  solid #001a00;
+  border-style: dashed;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
+  background-color: grey;
+  opacity: 10;
+  border-radius: 10px;
+  border: 1px  solid #001a00;
+  border-style: dashed;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
+.design-selection {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 500px;
+  background-color: grey;
+  opacity: 10;
+  border-radius: 10px;
+  justify-content: center;
+  border: 1px  solid #001a00;
+  border-style: dashed;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
+.design-archives {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 500px;
+  background-color: grey;
+  opacity: 10;
+  border-radius: 10px;
+  justify-content: center;
+  border: 1px  solid #001a00;
+  border-style: dashed;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
+.zen-resources {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 500px;
+  background-color: grey;
+  opacity: 10;
+  border-radius: 10px;
+  justify-content: center;
+  border: 1px  solid #001a00;
+  border-style: dashed;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
